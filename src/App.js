@@ -16,10 +16,17 @@ const App = () => {
   ])
 
   console.log("board: ", board)
+
+  const handleClick = (id) => {
+    // alert(id)
+    board[id] = "🌂"
+    setBoard([...board])
+  }
+
   return (
     <>
       <h1>Treasure Hunt Game</h1>
-      <Square board={board}/>
+      <Square board={board} handleClick={handleClick}/>
     </>
   )
 }
