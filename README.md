@@ -102,6 +102,7 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 - conditional statements to cover if the treasure location is selected and for default emoji
 
 - Can select the random losing square and the question mark will become a bomb emoji "☔️"
+- add an additional conditional statement
 
 **Story 3**: In order to play the treasure hunt game, as the user of the application, I should be able to restart the game at any time.
 
