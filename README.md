@@ -89,16 +89,19 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
   - reassign the value to the emoji
   - update the state variable with its setter function
   
-
-
 **Story 2**: In order to play the treasure hunt game, as the user of the application, I should be able to see a winning square and a losing square.
 
 **Branch**: win-lose
 
 **Acceptance Criteria**
 
-- Can select the random winning square and the question mark will become a treasure emoji
-- Can select the random losing square and the question mark will become a bomb emoji
+- Can select the random winning square and the question mark will become a treasure emoji "🏖️"
+- Math.random(): outputs a random decimal number < 1
+- multiply Math.random() by the amount of options necessary for the game: `board.length`
+- Math.floor(): rounds down to the nearest whole number
+- conditional statements to cover if the treasure location is selected and for default emoji
+
+- Can select the random losing square and the question mark will become a bomb emoji "☔️"
 
 **Story 3**: In order to play the treasure hunt game, as the user of the application, I should be able to restart the game at any time.
 

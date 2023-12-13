@@ -18,9 +18,19 @@ const App = () => {
   console.log("board: ", board)
 
   const handleClick = (id) => {
-    // alert(id)
-    board[id] = "🌂"
-    setBoard([...board])
+    // assign a random number to the treasure
+    let treasureLocation = Math.floor(Math.random() * board.length)
+    console.log("treasure: ", treasureLocation)
+    // if treasure is selected
+    if(treasureLocation === id) {
+      board[id] = "🏖️"
+      setBoard([...board])
+    // else return the default emoji
+    } else {
+      board[id] = "🌂"
+      setBoard([...board])
+    }
+
   }
 
   return (
